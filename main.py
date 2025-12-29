@@ -16,10 +16,11 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def cmd_start(message: Message):
-    await message.answer("Привет! Я базовый бот на aiogram 3.")
+    await message.answer("Привет!!! Я базовый бот на aiogram 3.")
 
 async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    print("Бот успешно запущен и слушает сообщения...")    
+    asyncio.run(main()) 
